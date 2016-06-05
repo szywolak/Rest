@@ -39,7 +39,7 @@ public class execute {
         session.close();
     }
 
-    public List selectFrom(String login) throws IOException {
+    public List<WeatherEntity> selectFrom(String login) throws IOException {
 
 
         SessionFactory sessionFactory = new Configuration().configure("/hibernate.cfg.xml").buildSessionFactory();
